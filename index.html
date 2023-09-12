@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Python Array</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <font color="red">
+        <h1>🐞🐞🐞🐞🐞🐞🐞🐞🐞🐞🐞🐞🐞🐞🐞🐞🐞🐞🐞🐞🐞🐞🐞🐞🐞🐞🐞🐞🐞🐞🐞🐞🐞</h1>
+        <h2>FormatVvoda Snachalo vvesti razmer massiva a potom massiv cherez probel</h2>
+        <img src="learn.png" alt="3 1 2 3 1 2 3 1 2 3"/>
+        
+        <div>
+            <input id="InputArray"/>
+            <button onclick = "submit(), document.getElementById('InputArray').value=''">
+                Кнопка
+            </button>
+        </div>
+
+        <script>
+            function submit()
+            {
+                var a = document.getElementById("InputArray")
+                let arr = a.value.split(' ')
+                let summ = 0
+                let counter = 0
+                for (let i = 0; i < arr[0]; i++) {
+                    for (let j = 0; j < arr[0]; j++) {
+                        if (i < j){
+                            summ += Number(arr[i*arr[0]+j+1])
+                            counter += 1
+                        }
+                    }
+                }
+                alert ("summa - " + summ + " " + "Kolvo - " + counter)
+            }
+        </script>
+    </font>
+  </body>
+</html>
